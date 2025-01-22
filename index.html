@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Changer Tool Craftland</title>
+    <link rel="icon" href="/icon.png" type="image/png+xml">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Player Changer Tool Craftland</h2>
+        <div class="form-group">
+            <label for="fileUpload">
+                Upload <span class="highlight-green">ProjectData_slot_X.bytes</span> File
+            </label>
+            <input type="file" id="fileUpload" accept=".bytes">
+        </div>
+        <div class="form-group">
+            <label for="playerSelect">Select Number Of Players</label>
+            <select id="playerSelect">
+                <option value="1">Player 1</option>
+                <option value="2">Player 2</option>
+                <option value="3">Player 3</option>
+                <option value="4">Player 4</option>
+                <option value="5">Player 5</option>
+                <option value="6">Player 6</option>
+                <option value="7">Player 7</option>
+                <option value="8">Player 8</option>
+                <option value="9">Player 9</option>
+                <option value="10">Player 10</option>
+            </select>
+        </div>
+        <button onclick="modifyAndDownload()">Download</button>
+        <div id="notification" class="notification"></div>
+        <div class="loading" id="loadingIndicator">Processing... Please wait.</div>
+        <div class="progress-container" id="progressContainer" style="display: none;">
+            <div id="progressBar" class="progress-bar">0%</div>
+        </div>
+    </div>
+    <div class="footer">
+    <p>&copy; 2025 ©️ Copyright<span id="footer-link"></span></p>
+    </div>
+     <script src="/script.js"></script>
+</body>
+</html>
